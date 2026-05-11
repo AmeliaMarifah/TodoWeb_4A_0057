@@ -63,4 +63,10 @@ function tampilkanTugas() {
         let tombolHapus = document.createElement("button");
         tombolHapus.innerText = "Hapus";
         tombolHapus.className = "hapus";
+
+        itemTugas.appendChild(spanbaru);
+        itemTugas.appendChild(tombolStatus);
+        itemTugas.appendChild(tombolEdit);
+        itemTugas.appendChild(tombolHapus);
+        daftarTugas.appendChild(itemTugas);
 }
