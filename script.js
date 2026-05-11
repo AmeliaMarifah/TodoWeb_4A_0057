@@ -78,3 +78,11 @@ function tampilkanTugas() {
 
     });
 }
+
+function hapusTugas(index) {
+    let konfirmasi = confirm("Yakin ingin menghapus tugas ini?");
+    if (konfirmasi) {
+        daftarTugasArray.splice(index, 1);
+        tampilkanTugas();
+    }
+}
