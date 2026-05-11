@@ -41,5 +41,8 @@ btntambah.addEventListener("click", function() {
     });
 
     inputTugas.value = "";
-
 });
+
+function tampilkanTugas() {
+    daftarTugas.innerHTML = "";
+}
