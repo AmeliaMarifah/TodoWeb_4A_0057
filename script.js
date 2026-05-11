@@ -1,6 +1,6 @@
 
 const inputTugas = document.getElementById("inputTugas");
-const btntambah = document.getElementById("btntambah");
+const btntambah = document.getElementById("btnTambah");
 const daftarTugas = document.getElementById("daftarTugas");
 const inputTanggal = document.getElementById("inputTanggal");
 
@@ -16,21 +16,11 @@ btntambah.addEventListener("click", function() {
     }
 
     daftarTugasArray.push({
-    nama: teksTugas,
-    tanggal: inputTanggal.value,
-    status: "pending"
+        nama: teksTugas,
+        tanggal: inputTanggal.value,
+        status: "pending"
     });
 
-    inputTugas.value = "";
-    inputTanggal.value = "";
-    tampilkanTugas();
-
-    let listbaru = document.createElement("li");
-    let spanbaru = document.createElement("span");
-    
-    spanbaru.innerHTML = teksTugas;
-    listbaru.appendChild(spanbaru);
-    daftarTugas.appendChild(listbaru);
     // const warnabaru = document.querySelectorAll("li");
     // warnabaru.forEach((item, index) => {
     //     if(index % 2 === 0) {
@@ -41,6 +31,8 @@ btntambah.addEventListener("click", function() {
     // });
 
     inputTugas.value = "";
+    inputTanggal.value = "";
+    tampilkanTugas();
 });
 
 function tampilkanTugas() {
@@ -74,9 +66,9 @@ function tampilkanTugas() {
         daftarTugas.appendChild(itemTugas);
 
         if (index % 2 === 0) {
-        itemTugas.style.color = "red";
+            itemTugas.style.color = "red";
         } else {
-        itemTugas.style.color = "green";
+            itemTugas.style.color = "green";
         }
 
     });
