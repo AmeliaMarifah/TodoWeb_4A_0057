@@ -60,6 +60,7 @@ function tampilkanTugas() {
 
         let tombolEdit = document.createElement("button");
         tombolEdit.innerText = "Edit";
+        tombolEdit.onclick = function() { editTugas(index); };
 
         let tombolHapus = document.createElement("button");
         tombolHapus.innerText = "Hapus";
