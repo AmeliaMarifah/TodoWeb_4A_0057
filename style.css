@@ -50,3 +50,13 @@ li span {
     background: #dc2626;
 }
 
+.badge {
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+.badge-pending  { background: #e2e8f0; color: #475569; }
+.badge-progress { background: #fef3c7; color: #b45309; }
+.badge-done     { background: #dcfce7; color: #15803d; }
