@@ -34,7 +34,8 @@ li {
     padding: 10px;
     border-radius: 6px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 10px;
 }
 
 .hapus {
