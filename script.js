@@ -59,4 +59,8 @@ function tampilkanTugas() {
 
         let tombolEdit = document.createElement("button");
         tombolEdit.innerText = "Edit";
+
+        let tombolHapus = document.createElement("button");
+        tombolHapus.innerText = "Hapus";
+        tombolHapus.className = "hapus";
 }
