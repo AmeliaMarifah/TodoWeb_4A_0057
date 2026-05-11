@@ -80,6 +80,16 @@ function tampilkanTugas() {
     });
 }
 
+function gantiStatus(index) {
+    let siklusStatus = {
+        pending: "progress",
+        progress: "done",
+        done: "pending"
+    };
+    daftarTugasArray[index].status = siklusStatus[daftarTugasArray[index].status];
+    tampilkanTugas();
+}
+
 function hapusTugas(index) {
     let konfirmasi = confirm("Yakin ingin menghapus tugas ini?");
     if (konfirmasi) {
