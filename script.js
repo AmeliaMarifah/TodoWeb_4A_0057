@@ -101,4 +101,10 @@ function hapusTugas(index) {
 
 function editTugas(index) {
     let namaBaru = prompt("Edit nama tugas:", daftarTugasArray[index].nama);
+    let tanggalBaru = prompt("Edit tanggal (YYYY-MM-DD):", daftarTugasArray[index].tanggal);
+    if (namaBaru !== null && namaBaru.trim() !== "") {
+        daftarTugasArray[index].nama = namaBaru.trim();
+        daftarTugasArray[index].tanggal = tanggalBaru || daftarTugasArray[index].tanggal;
+        tampilkanTugas();
+    }
 }
