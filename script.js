@@ -98,3 +98,7 @@ function hapusTugas(index) {
         tampilkanTugas();
     }
 }
+
+function editTugas(index) {
+    let namaBaru = prompt("Edit nama tugas:", daftarTugasArray[index].nama);
+}
