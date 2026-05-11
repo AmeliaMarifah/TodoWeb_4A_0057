@@ -69,4 +69,12 @@ function tampilkanTugas() {
         itemTugas.appendChild(tombolEdit);
         itemTugas.appendChild(tombolHapus);
         daftarTugas.appendChild(itemTugas);
+
+        if (index % 2 === 0) {
+        itemTugas.style.color = "red";
+        } else {
+        itemTugas.style.color = "green";
+        }
+
+        
 }
