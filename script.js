@@ -45,4 +45,8 @@ btntambah.addEventListener("click", function() {
 
 function tampilkanTugas() {
     daftarTugas.innerHTML = "";
+
+    daftarTugasArray.forEach(function(tugas, index) {
+    let itemTugas = document.createElement("li");
+    let spanbaru = document.createElement("span");
 }
