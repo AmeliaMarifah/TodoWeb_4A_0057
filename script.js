@@ -56,4 +56,7 @@ function tampilkanTugas() {
 
         let tombolStatus = document.createElement("button");
         tombolStatus.innerText = "Status";
+
+        let tombolEdit = document.createElement("button");
+        tombolEdit.innerText = "Edit";
 }
