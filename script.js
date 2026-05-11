@@ -47,10 +47,13 @@ function tampilkanTugas() {
     daftarTugas.innerHTML = "";
 
     daftarTugasArray.forEach(function(tugas, index) {
-    let itemTugas = document.createElement("li");
-    let spanbaru = document.createElement("span");
+        let itemTugas = document.createElement("li");
+        let spanbaru = document.createElement("span");
 
-    let tanggalTampil = tugas.tanggal ? tugas.tanggal : "Tanpa tanggal";
-    spanbaru.innerHTML = `<b>${tugas.nama}</b> — ${tanggalTampil} 
+        let tanggalTampil = tugas.tanggal ? tugas.tanggal : "Tanpa tanggal";
+        spanbaru.innerHTML = `<b>${tugas.nama}</b> — ${tanggalTampil} 
                       <span class="badge badge-${tugas.status}">[${tugas.status}]</span>`;
+
+        let tombolStatus = document.createElement("button");
+        tombolStatus.innerText = "Status";
 }
