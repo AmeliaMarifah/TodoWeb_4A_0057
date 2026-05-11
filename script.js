@@ -4,6 +4,9 @@ const btntambah = document.getElementById("btntambah");
 const daftarTugas = document.getElementById("daftarTugas");
 const inputTanggal = document.getElementById("inputTanggal");
 
+let daftarTugasArray = [];
+let indexTugasYangDiedit = null;
+
 btntambah.addEventListener("click", function() {
     let teksTugas = inputTugas.value;
 
@@ -11,6 +14,16 @@ btntambah.addEventListener("click", function() {
         alert("Data harus dimasukkan!");
         return;
     }
+
+    daftarTugasArray.push({
+    nama: teksTugas,
+    tanggal: inputTanggal.value,
+    status: "pending"
+    });
+
+    inputTugas.value = "";
+    inputTanggal.value = "";
+    tampilkanTugas();
 
     let listbaru = document.createElement("li");
     let spanbaru = document.createElement("span");
