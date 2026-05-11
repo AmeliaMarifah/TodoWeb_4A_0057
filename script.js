@@ -31,14 +31,14 @@ btntambah.addEventListener("click", function() {
     spanbaru.innerHTML = teksTugas;
     listbaru.appendChild(spanbaru);
     daftarTugas.appendChild(listbaru);
-    const warnabaru = document.querySelectorAll("li");
-    warnabaru.forEach((item, index) => {
-        if(index % 2 === 0) {
-            item.style.color = "red";
-        } else {
-            item.style.color = "green";
-        }
-    });
+    // const warnabaru = document.querySelectorAll("li");
+    // warnabaru.forEach((item, index) => {
+    //     if(index % 2 === 0) {
+    //         item.style.color = "red";
+    //     } else {
+    //         item.style.color = "green";
+    //     }
+    // });
 
     inputTugas.value = "";
 });
@@ -76,5 +76,5 @@ function tampilkanTugas() {
         itemTugas.style.color = "green";
         }
 
-        
+    });
 }
