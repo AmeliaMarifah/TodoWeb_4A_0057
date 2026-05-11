@@ -2,6 +2,7 @@
 const inputTugas = document.getElementById("inputTugas");
 const btntambah = document.getElementById("btntambah");
 const daftarTugas = document.getElementById("daftarTugas");
+const inputTanggal = document.getElementById("inputTanggal");
 
 btntambah.addEventListener("click", function() {
     let teksTugas = inputTugas.value;
